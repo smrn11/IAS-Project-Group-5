@@ -1,6 +1,6 @@
 # IAS Project: Group-5
 
-# AWS Compliance Check Script
+## AWS Compliance Check Script
 
 This script provides a comprehensive compliance assessment across multiple security and governance areas in an AWS environment. It evaluates key areas: **Compliance**, **Data Protection and Encryption**, **Access Control**, **Incident Response**, and **Governance and Risk Management**. Each area is scored individually based on specific AWS best practices and regulatory standards, providing a score out of 100.
 
