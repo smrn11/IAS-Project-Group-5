@@ -31,5 +31,25 @@ python AWS_eval.py
 ```
 
 After you run the script, depending on the configurations enabled in your AWS ecosystem, you will recieve an output something like this:
+```
+PS C:\Users\sandr\IAS> python eval.py
+Starting Compliance Check...
+Starting Data Protection and Encryption Check...
+Starting Access Control Check...
+Error in Access Control Check: can't subtract offset-naive and offset-aware datetimes
+Starting Incident Response Check...
+Starting Governance and Risk Management Check...
+Error in Governance Check: An error occurred (InvalidAccessException) when calling the GetEnabledStandards operation: Account 975050316435 is not subscribed to AWS Security Hub
+
+Compliance Score: 20.0
+Data Protection and Encryption Score: 80.0
+Access Control Score: 40.0
+Incident Response Score: 60.0
+Governance and Risk Management Score: 45.0
+```
+
+
+
+
 
 
