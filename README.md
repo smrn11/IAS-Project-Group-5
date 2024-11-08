@@ -1,6 +1,6 @@
 # IAS Project: Group-5
 
-## AWS Compliance Check Script
+### AWS Compliance Check Script
 
 This script provides a comprehensive compliance assessment across multiple security and governance areas in an AWS environment. It evaluates key areas: **Compliance**, **Data Protection and Encryption**, **Access Control**, **Incident Response**, and **Governance and Risk Management**. Each area is scored individually based on specific AWS best practices and regulatory standards, providing a score out of 100.
 
@@ -20,12 +20,16 @@ Each aspect has a total possible score of 5 where 5 individual components are ch
 ### Usage
 
 Before you run the script, it will ask you for details regarding your AWS account. Open your terminal and run the command `aws configure`. Thiw will prompt your for 4 inputs:
-- AWS ACCESS KEY:
-- SECRET KEY:
-- REGION:
-- OUTPUT FORMAT:
+- `AWS ACCESS KEY`:
+- `SECRET KEY`:
+- `REGION`:
+- `OUTPUT FORMAT`:
 
 Once you've configured your AWS credentials successfully, run the script using:
 ```bash
 python AWS_eval.py
 ```
+
+After you run the script, depending on the configurations enabled in your AWS ecosystem, you will recieve an output something like this:
+
+
