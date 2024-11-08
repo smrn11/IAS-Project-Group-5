@@ -18,7 +18,14 @@ Each aspect has a total possible score of 5 where 5 individual components are ch
 - Python with `boto3` installed (`pip install boto3`).
 
 ### Usage
-Run the script using:
+
+Before you run the script, it will ask you for details regarding your AWS account. Open your terminal and run the command `aws configure`. Thiw will prompt your for 4 inputs:
+- AWS ACCESS KEY:
+- SECRET KEY:
+- REGION:
+- OUTPUT FORMAT:
+
+Once you've configured your AWS credentials successfully, run the script using:
 ```bash
-python compliance_check.py
+python AWS_eval.py
 ```
