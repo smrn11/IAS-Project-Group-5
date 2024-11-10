@@ -112,7 +112,66 @@ Governance and Risk Management Score: 55.0
 Overall Compliance Score: 63.0
 ```
 
+## GCP Compliance Check Script
 
+This script performs a comprehensive compliance assessment for a Google Cloud Platform (GCP) environment, evaluating it across multiple security and governance areas. The assessment includes scores in key areas: **Compliance**, **Data Protection and Encryption**, **Access Control**, **Incident Response**, and **Governance and Risk Management**. Each area is scored based on GCP's best practices, regulatory standards, and compliance frameworks, providing an overall compliance score to gauge the security posture of your GCP environment.
 
+### Key Features
 
+The script uses the GCP SDK (Google Cloud Python Client Libraries) to perform checks in critical GCP services like Cloud Storage, IAM, Cloud Key Management (KMS), Security Command Center, and Logging. Each check verifies resource configurations and best practices, such as encryption, key rotation, multi-factor authentication (MFA), policy enforcement, and monitoring, based on five main evaluation criteria:
 
+- **Compliance with Regulatory Standards**
+- **Data Protection and Encryption**
+- **Access Control**
+- **Incident Response**
+- **Governance and Risk Management**
+
+Each criterion is scored out of a maximum of 5 points, where 5 specific components are verified in each area. At the end, the script provides an overall compliance score out of 100, giving a quantified evaluation of your GCP security ecosystem.
+
+### Requirements
+
+- **GCP Credentials**: A user or service account with sufficient permissions to query resources across the GCP environment.
+- **Python and GCP SDK**: Make sure `google-auth`, `google-cloud-storage`, `google-cloud-logging`, `google-cloud-iam`, `google-cloud-securitycenter`, and `google-cloud-kms` libraries are installed.
+
+To install the required libraries, run:
+```
+pip install google-auth google-cloud-storage google-cloud-logging google-cloud-iam google-cloud-securitycenter google-cloud-kms
+```
+### Usage
+
+Before running the script, ensure you have configured your GCP credentials. You can authenticate by setting up a service account key or by using the gcloud CLI. For ease of use, it’s recommended to authenticate via the gcloud CLI as follows:
+
+```
+gcloud auth application-default login
+```
+
+### Running the Script
+
+Once authenticated, you can execute the script with:
+
+```
+python GCP_eval.py
+```
+
+The script will automatically check your configurations in the GCP environment, assessing them based on GCP’s best practices and compliance requirements.
+
+### Output
+
+The script’s output will show a breakdown of the scores by category, followed by an overall compliance score. Here’s a sample output:
+
+```
+$ python GCP_eval.py
+Starting Compliance Check...
+Starting Data Protection and Encryption Check...
+Starting Access Control Check...
+Starting Incident Response Check...
+Starting Governance and Risk Management Check...
+
+Compliance Score: 70.0
+Data Protection and Encryption Score: 85.0
+Access Control Score: 65.0
+Incident Response Score: 75.0
+Governance and Risk Management Score: 60.0
+
+Overall Compliance Score: 71.0
+```
