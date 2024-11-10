@@ -1,6 +1,6 @@
 # IAS Project: Group-5
 
-### AWS Compliance Check Script
+## AWS Compliance Check Script
 
 This script provides a comprehensive compliance assessment across multiple security and governance areas in an AWS environment. It evaluates key areas: **Compliance**, **Data Protection and Encryption**, **Access Control**, **Incident Response**, and **Governance and Risk Management**. Each area is scored individually based on specific AWS best practices and regulatory standards, providing a score out of 100.
 
@@ -48,7 +48,7 @@ Incident Response Score: 60.0
 Governance and Risk Management Score: 45.0
 ```
 
-### Azure Compliance Check Script
+## Azure Compliance Check Script
 
 This script performs a comprehensive compliance assessment for an Azure environment, evaluating it across multiple security and governance areas. The assessment includes scores in key areas: **Compliance**, **Data Protection and Encryption**, **Access Control**, **Incident Response**, and **Governance and Risk Management**. Each area is scored based on Azure's best practices, regulatory standards, and compliance frameworks, providing an overall compliance score to gauge the security posture of your Azure environment.
 
